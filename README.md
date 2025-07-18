@@ -24,7 +24,7 @@ Now that we have our LAN and WAN, I will manually configure the IPv4 settings on
 
 Those changes will now grant access to the pfSense login page via the default gateway IP address entered into the search bar. Using the default credentials, we can now log in (User: admin / Password: pfsense)
 
-<img src="pfSense_login.png" alt="pfSense Login Page" width="600">
+<img src="pfSense_login.png" alt="pfSense Login Page" width="500">
 
 In pfSense, I navigated to System -> Routing -> Gateways to add the LAN gateway associated with the pfSense LAN. The WAN gateway is already configured, so only a configuration for LAN needs to be made.
 
@@ -64,7 +64,7 @@ The next thing I want to check out is the Protocol Hierarchy Statistics. This sh
 
 The I/O graph shows when the bulk of traffic was received. The peak in traffic from the DoS attack can be clearly seen below.
 
-<img src="Wireshark_IOgraph.png" alt="Wireshark I/O Graph" width="600">
+<img src="Wireshark_IOgraph.png" alt="Wireshark I/O Graph" width="500">
 
 Now that we have gathered some evidence, we can quickly discover what kind of attack this is. Based off the unusual amount of TCP packets which are being received and not sent, it is clear that the TCP three-way-handshake is being disrupted. When the Windows machine receives the spoofed SYN packets, it sends the reply message (SYN-ACK), waiting for a reply (ACK) from a host that doesn't exist. To better observe SYN packets, we can use the filter used in the picture below. The high amount of SYN packets with little variance in time proves that this is a SYN flood attack. 
 
