@@ -6,7 +6,10 @@
 
 ### Skills Learned
 
-- 
+- Created a real-world network involving LAN, WAN, and pfSense as a router
+- Configured a firewall with the ability to allow/block traffic and provide logs
+- Simulated DoS attack with network tool
+- Performed packet analysis to discover SYN flood attack
 
 ## Steps
 
