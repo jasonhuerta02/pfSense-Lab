@@ -17,7 +17,7 @@ To begin, I am creating two virtual networks, the first for the Windows VM and t
 
 <img src="NATnetworks.png" alt="NAT Networks" width="600">
  
-After installing pfSense, I configured em0 (LAN) and em1 (LAN) to have IP addresses in the corresponding subnet which was created in the first step.
+After installing pfSense, I configured em0 (LAN) and em1 (WAN) to have IP addresses in the corresponding subnet which was created in the first step.
 
 <img src="WAN_LAN.png" alt="LAN and WAN" width="600">
 
