@@ -54,7 +54,7 @@ There is now a working connection between the Windows and Kali Linux machines, s
 
 <img src="hping3.png" alt="NAT Networks" width="600">
 
-After starting the SYN flood, I started a packet capture on the Windows machine to analyze the traffic. I first checked the Conversations tab, which shows the traffic between Windows and Kali Linux and how many packets were sent/received. As you can see below, nearly all of the traffic is from the Kali Linux machine (48k packets) which would be an immediate red flag in an enterprise environment. 
+After starting the SYN flood, I started a Wireshark packet capture on the Windows machine to analyze the traffic. I first checked the Conversations tab, which shows the traffic between Windows and Kali Linux and how many packets were sent/received. As you can see below, nearly all of the traffic is from the Kali Linux machine (48k packets) which would be an immediate red flag in an enterprise environment. 
 
 <img src="Wireshark_Conversations.png" alt="Wireshark Conversationss" width="600">
 
