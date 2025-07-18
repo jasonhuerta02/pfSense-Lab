@@ -2,7 +2,7 @@
 
 ## Objective
 
-
+The objective of this project was to design and implement a simulated enterprise network environment using virtual machines to demonstrate basic network security principles. The setup included a Windows VM (victim), a Kali Linux VM (attacker), and a pfSense VM (firewall and router). The project involved configuring the pfSense firewall to manage and control network traffic, simulating a Denial-of-Service (DoS) attack from the Kali machine, and analyzing the suspicous network traffic with Wireshark. A custom firewall rule was developed and deployed to detect and block the simulated malicious traffic.
 
 ### Skills Learned
 
